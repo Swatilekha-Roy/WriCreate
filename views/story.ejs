@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Light</title>
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
   	<!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -36,7 +35,7 @@
     <%  comments.forEach(function(comment){ %>
     <div style="display: flex; background-color: whitesmoke; ">
       <h5 style="font-weight: 800;"><%=comment.title%> : &nbsp; </h5>
-      <h5 style="text-transform: unset;"><%=comment.post%></h5>
+      <p style="line-height: 60px;"><%=comment.post%></p>
     </div>
 
       <% }) %>
