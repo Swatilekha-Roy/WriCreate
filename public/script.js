@@ -1,28 +1,28 @@
 // Quotes
 
     let quotes = [
-  "'When the going gets tough, the tough use JavaScript'",
-  "'To code or not to code, that is the question'",
-  "'There is more than one type of coder, but they all started at zero'",
-  "'Give me your kisses, and your pull requests'",
-  "'Gitter done!'",
-  "'How many functions does it take to change the world?'",
-  "'You had me at Hello World'",
-  "'Take me to your GitHub profile'",
-  "'Every error is a chance to learn'",
-  "'I owe it all to @freeCodeCamp'",
+  "'You are in a zoo, except that you're the one they are clicking pictures of as you are strutting around, confused by the bars around you.",
+  "'What's a spaceship without a driver? You, Dunbolt, are out to show them that you don't need drivers, huh.'",
+  "'I am adding no blood to this bloody mary, just so you know.'",
+  "'What's the tree house up there writing about you and that one time you farted thinking nobody noticed?'",
+  "'You are the last person left on Earth.'",
+  "'You are the last control subject in Dr. Frank's crazy maggot eating experiment.'",
+  "'You just had the trip of your lifetime but you still feel out of place.'",
+  "'You just found a fortune cookie on the floor, and picked it up. You gasp loudly when you read what's written on the note.'",
+  "'To err is human, to slur is sailor (especially when you are being chased down by a fleet of pirates!'",
+  "'Hello, I am Death and it's officially time for us to get acquainted.'",
   "'Stop repeating yourself! Stop repeating yourself! Stop repeating yourself!'",
-  "'Mmmmm, Vanilla JavaScript'",
-  "'Hold me close and make me responsive'",
-  "'Tell me your secret function'",
-  "'There is more than one way to write a function'",
-  "'You're an array of sunshine'",
-  "'Whisper sweet functions in my ear'",
-  "'Don't tell anyone, but I really hate IE6'",
-  "'!false === it's funny because it's true'",
-  "'It was love at first byte'",
-  "'@ossia made me do it!'",
-  "'I function better at night'"
+  "'Why Me? You ask the kidnapper to which he replies,'I am saving you from something out there.''",
+  "'You just chance upon a lottery and a break up on the same evening. Damn, what a price!'",
+  "'Tell me your secret fantasy.'",
+  "'To kill, or not to kill- that is the question.'",
+  "'Fire on fire would normally kill us but this much desire, together we're winners (Thank you, Sam Smith!!)'",
+  "'Sweet poison is thy love.'",
+  "'Write a poem that doesn't have any pronouns.'",
+  "'It's funny that you laugh when all I am thinking about is strangling you.'",
+  "'It was love at first bite, write about any two food items falling in love.'",
+  "'You and an alien are having a conversation. On Mars. Yep.'",
+  "'I guess I am a vampire but I am kind of blood intolerant. What do I survive on?'"
   ]
 
 // Get random quote and display 
@@ -52,6 +52,11 @@ function shareQuote() {
     );
     return false;
 }
+
+
+
+
+
 
 
 var like=document.getElementById("like");

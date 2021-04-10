@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Storyshare</title>
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
   <link rel="stylesheet" href="style.css">
-  	<!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-
 </head>
 <body>
 
@@ -83,19 +82,19 @@
 <div class="container">
         <div class="row flex-top flex-center">
           <header class="border shadow">
-          <h1>Random Quote Generator</h1>
+          <h1 class="st-h1">Story Prompt Generator</h1>
           </header>
         </div>
          
         <div class="row flex-center">
-         <button id="button" class="btn-large new-quote-button" onClick="getQuote()">New Quote</button>
-         <button id="button" class="btn-large tweet-button" onClick="tweetQuote()">Tweet Quote</button>
-         <button id="button" class="btn-large fb-button" onClick="shareQuote()">Share Quote</button>
+         <button id="button" class="btn-large btn-block new-quote-button" onClick="getQuote()">New Prompt</button>
+         <button id="button" class="btn-small tweet-button" onClick="tweetQuote()">Tweet Prompt</button>
+         <button id="button" class="btn-small fb-button" onClick="shareQuote()">Share Prompt</button>
         </div>
          
         <div class="row flex-center">
-         <main class="card">
-          <p class="quote card-body center" id="newQuoteSection">Start browsing our prompts for a perfect story!</p>
+         <main class="card card-h">
+          <p class="quote card-body center" id="newQuoteSection">Start browsing our prompts for your perfect story!</p>
          </main>
         </div>
              
@@ -104,6 +103,54 @@
         </div>
            
     </div>
+
+
+<!--
+<div class="row">
+  <div class="col-12 col-md-5">
+    <div class="card" style="width: 20rem; display: inline;">
+    <img src="https://picsum.photos/768" alt="Card example image">
+      <div class="card-body">
+        <h4 class="card-title">My awesome Paper card!</h4>
+        <h5 class="card-subtitle">Nice looking subtitle.</h5>
+        <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+        <button>Let me go here!</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-md-5">
+      <div class="card" style="width: 20rem; display: inline;">
+        <img src="https://picsum.photos/768" alt="Card example image">
+          <div class="card-body">
+            <h4 class="card-title">My awesome Paper card!</h4>
+            <h5 class="card-subtitle">Nice looking subtitle.</h5>
+            <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+            <button>Let me go here!</button>
+          </div>
+      </div>
+  </div>
+
+    <div class="col-12 col-md-5">
+      <div class="card" style="width: 20rem;">
+      <img src="https://picsum.photos/768" alt="Card example image">
+        <div class="card-body">
+          <h4 class="card-title">My awesome Paper card!</h4>
+          <h5 class="card-subtitle">Nice looking subtitle.</h5>
+          <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+          <button>Let me go here!</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="form-group">
+  <label for="large-input">Large Input</label>
+  <textarea id="large-input" placeholder="Large input"></textarea>
+</div>
+
+-->
 
     <script type="text/javascript" src="script.js"></script>
 </body>
