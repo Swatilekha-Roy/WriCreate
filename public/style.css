@@ -1,6 +1,9 @@
+/* General styles */
 body {
    background: #000;
 }
+
+/* Lights */
  .lightrope {
    text-align: center;
    white-space: nowrap;
@@ -106,18 +109,35 @@ body {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .lightrope {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+
+/* Navbar */
+@media only screen and (max-width:700px) {
+  nav {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
 
 
 
+/* Random prompt generator */
 header {
   padding: 1em;
   background-color: #ffff80;
   margin-top: 1em;
+  font-size: 1rem;
   text-align: center;
 }
 
 .quote {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .btn-large {
@@ -128,40 +148,67 @@ header {
   box-shadow: 0 0 0 0;
 }
 
-.card {
+.card-h {
   text-align: center;
   width: 45em;
 }
 
 .new-quote-button {
   background-color: #8cff66;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .tweet-button {
   background-color: #b3e0ff;
+  margin-right: 5rem;
 }
+
+.fb-button {
+  background-color: hsl(327, 100%, 88%);
+}
+
+#newQuoteSection {
+  color: #c5c4c4;
+  font-size: 25px;
+}
+
+.st-h1 {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
 
 
 @media (max-width: 700px) {
   header {
     padding: 1em;
-    background-color: #ffff80;
-    margin-top: 1em;
+    background-color: #faff8e;
+    margin-top: 3em;
     text-align: center;
   }
 
-  h1 {
-    font-size: 45px;
+  .st-h1 {
+    padding-top: 0;
   }
-
+  
   #newQuoteSection {
-    font-size: 35px;
+    font-size: 20px;
   }
 
+  .new-quote-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tweet-button {
+    margin-right: auto;
+  }
 
 }
 
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
   background-color: #000;
@@ -173,7 +220,7 @@ header {
 }
 ::-webkit-scrollbar-thumb {
   background: #f00;
-  height: 20px;
+  height: 5px;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
