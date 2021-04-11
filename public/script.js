@@ -56,7 +56,7 @@ function shareQuote() {
 
 
 
-
+/* Like counter */
 
 
 var like=document.getElementById("like");
@@ -85,3 +85,55 @@ var flg=0;
 
 
 
+
+
+/* Game speech */
+
+       var noun1, adjective1, noun2, storyOutput;
+
+      function getInput(){
+        noun1 = document.getElementById("noun1").value;
+        adjective1 = document.getElementById("adjective1").value;
+        noun2 = document.getElementById("noun2").value;
+
+        storyOutput = ("Once upon a time there was a " + noun1 + ", that is very-very " + adjective1 + ". It loves doing " + noun2 + ".");
+
+        document.getElementById("output").innerHTML = storyOutput;
+      }
+        
+     
+        var voiceList = document.querySelector('#voiceList');
+        var btnSpeak = document.querySelector('#btnSpeak');
+        var synth = window.speechSynthesis;
+        var voices = [];
+
+        PopulateVoices();
+        if(speechSynthesis !== undefined){
+            speechSynthesis.onvoiceschanged = PopulateVoices;
+        }
+
+        btnSpeak.addEventListener('click', ()=> {
+            var toSpeak = new SpeechSynthesisUtterance(storyOutput);
+            var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+            voices.forEach((voice)=>{
+                if(voice.name === selectedVoiceName){
+                    toSpeak.voice = voice;
+                }
+            });
+            synth.speak(toSpeak);
+        });
+
+        function PopulateVoices(){
+            voices = synth.getVoices();
+            var selectedIndex = voiceList.selectedIndex < 0 ? 0 : voiceList.selectedIndex;
+            voiceList.innerHTML = '';
+            voices.forEach((voice)=>{
+                var listItem = document.createElement('option');
+                listItem.textContent = voice.name;
+                listItem.setAttribute('data-lang', voice.lang);
+                listItem.setAttribute('data-name', voice.name);
+                voiceList.appendChild(listItem);
+            });
+
+            voiceList.selectedIndex = selectedIndex;
+        }

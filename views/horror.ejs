@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WriCreate Horror</title>
+    <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  	<!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://use.edgefonts.net/creepster.js"></script>-->
+
+    <link rel="stylesheet" href="horror.css">
+
+
+
+</head>
+<body>
+
+
+<!--
+<svg class="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100" height="100">
+  <circle r="30" fill="#fff" cx="70" cy="70" />
+</svg>
+
+<div class="back ground"></div>
+<div class="mid ground"></div>
+<div class="frontmid ground"></div>
+<div class="front ground"></div>
+<div class="horseman"></div>-->
+
+
+
+
+<!-- Navbar -->
+  <nav class="border fixed split-nav">
+    <div class="nav-brand">
+       <a href="#"><img src="images/logo (2).png" style="height:53px"/></a>
+    </div>
+    <div class="collapsible">
+      <input id="collapsible1" type="checkbox" name="collapsible1">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="#">Home</a></li>
+          <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+	<div class="hearts" aria-hidden="true">
+
+<div  class="quote">
+  <h2>Time for some bone chilling progress!</h2>
+    <p>“Let’s leave!” A bruised Sam croaked.
+A dozen faces with green voids instead of eyes turned from screens. 
+“Oh no, they are…” Christy stammered.
+
+“Outside, it was night and the entire park looked deserted. All of us were panting and Sam voiced our feelings, “Was that real?”
+“Hope not”, I said.
+</p>
+</div>
+
+
+<label class="love-toggle" style="margin-left:5vw;"><input type="checkbox" /><span class="material-icons icon"><div style="display:flex"><i class="fas fa-heart" ></i>&nbsp;<p style="line-height:2px; font-size:30px;">Liked it!</p></div><div class="brust"></div></span></label>
+
+
+
+
+     <!-- Comment section -->
+  <%  comments.forEach(function(comment){ %>
+   <div class="row flex-top" style="display: flex; margin: auto 2%;">
+      <header class="border shadow comment-bg">
+      <h5 class="" style="font-weight: 800;"><%=comment.title%> : &nbsp;</h5>
+        <p style="line-height: 30px;"><%=comment.post%></p>
+	        </header>   
+	      </div>
+
+<% }) %>
+
+
+
+    <form class="sweet-form" action="/horror" method="post" style="margin-left: 9vw; margin-right:9vw;">
+      <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" type="text" name="postTitle" style="background: #dee9f5;"><br>
+        <label>Continue our story</label>
+        <textarea class="form-control" name="postBody" rows="4" cols="70" style="background: #dee9f5;" placeholder="Take it where you please, no duty on creativity!"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button" style="background: #f3a8b5;">Publish</button>
+      <button class="btn" style="background: #f7ff78; margin-left: 2%;" onclick="window.location.reload();">Reload</button>
+    </form>
+
+
+
+    <!-- Footer -->
+<div class="footer-con row flex-center">
+  <div class="col-12">
+    <footer class="border shadow">
+      <p style="margin-left: 3%">Made with <i class="fas fa-heart"></i> by WriCreate.
+      <!--<div class="row flex-right">
+
+        <div class="sm-4 col"><a href="https://github.com/Swatilekha-Roy/WriCreate" style="text-decoration: none !important;"><i class="fab fa-github" style="font-size: 40px"></i></a></div>
+      </div>-->
+    </footer>
+  </div>
+</div>
+
+
+</body>
+</html>
+

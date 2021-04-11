@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Storyshare</title>
+  <title>WriCreate</title>
+    <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+  <!-- Paper CSS stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- FA CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
 </head>
 <body>
 
+
+  <!-- Navbar -->
   <nav class="border fixed split-nav">
     <div class="nav-brand">
-      <h3><a href="#">Get PaperCSS</a></h3>
+       <a href="#"><img src="images/logo (2).png" style="height:53px"/></a>
     </div>
     <div class="collapsible">
       <input id="collapsible1" type="checkbox" name="collapsible1">
@@ -23,63 +31,64 @@
       </label>
       <div class="collapsible-body">
         <ul class="inline">
-          <li><a href="#">Documentation</a></li>
+          <li><a href="#prompt">Writing Prompts</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Github</a></li>
+          <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
         </ul>
       </div>
     </div>
-
+  
+    <!-- Lights -->
     <ul class="lightrope">
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </nav>
 
   
 
-
-<div class="container">
+<!-- Story Prompt generator -->
+<div class="container" id="prompt">
         <div class="row flex-top flex-center">
           <header class="border shadow">
           <h1 class="st-h1">Story Prompt Generator</h1>
@@ -88,8 +97,8 @@
          
         <div class="row flex-center">
          <button id="button" class="btn-large btn-block new-quote-button" onClick="getQuote()">New Prompt</button>
-         <button id="button" class="btn-small tweet-button" onClick="tweetQuote()">Tweet Prompt</button>
-         <button id="button" class="btn-small fb-button" onClick="shareQuote()">Share Prompt</button>
+         <button id="button" class="btn-medium tweet-button" onClick="tweetQuote()">Tweet Prompt</button>
+         <button id="button" class="btn-medium fb-button" onClick="shareQuote()">Share Prompt</button>
         </div>
          
         <div class="row flex-center">
@@ -152,6 +161,72 @@
 
 -->
 
+
+
+
+<h1>Join the story!</h1>
+<div class="main">
+  
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://image.freepik.com/free-vector/curved-pumpkins-ghosts-halloween-background_52683-23347.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Time for some horror!</h2>
+          <p class="card_text">If you are looking for some bone chilling content to read and write on, you are in the right place! Continue and make others shiver, literally.</p>
+          <a href="/horror" ><button class="btn card_btn" style="margin-top: 5%">Take me!</button></a>
+        </div>
+      </div>
+    </li>
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://image.freepik.com/free-vector/writing-letter-article-writer-author-workplace-desk-table-illustration_101884-1036.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Poets Think Alike</h2>
+          <p class="card_text">But exactly how alike? Come explore beautiful poetry with us and join the poetry flow.</p>
+          <a href="/poetry"><button class="btn card_btn">Take me!</button></a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://image.freepik.com/free-vector/minimal-love-hearts-background-with-text-space_1017-23417.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Feel the love vibes?</h2>
+          <p class="card_text">Missing your special one or thinking about making them immortak through words? Then, do not look any further. Just hop in here!</p>
+          <a href="/romance"><button class="btn card_btn" style="margin-top: 5%">Take me!</button></a>
+        </div>
+      </div>
+    </li>
+
+   
+
+  </ul>
+</div>
+
+
+<div class="col-6 col" style="margin: 4% 10%;">
+    <a href="/game"><button class="btn-block st-btn">Play Our Fun Story Maker Game</button></a>
+  </div>
+
+
+
+<!-- Footer -->
+<div class="footer-con row flex-top flex-center">
+  <div class="col-12">
+    <footer class="border shadow">
+      <p style="margin-left: 3%">Made with <i class="fas fa-heart"></i> by WriCreate.
+      <!--<div class="row flex-right">
+
+        <div class="sm-4 col"><a href="https://github.com/Swatilekha-Roy/WriCreate" style="text-decoration: none !important;"><i class="fab fa-github" style="font-size: 40px"></i></a></div>
+      </div>-->
+    </footer>
+  </div>
+</div>
+    <!-- Custom script -->
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

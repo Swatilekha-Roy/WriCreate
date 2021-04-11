@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WriCreate Romance</title>
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+  	<!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://codepen.io/MAW/pen/XVRpEE">
+
+    <link rel="stylesheet" href="poetry.css">
+
+    
+
+</head>
+<body>
+<!--Falling Leaves-->
+
+
+  <!-- Navbar -->
+  <nav class="border fixed split-nav">
+    <div class="nav-brand">
+       <a href="#"><img src="images/logo (2).png" style="height:53px"/></a>
+    </div>
+    <div class="collapsible">
+      <input id="collapsible1" type="checkbox" name="collapsible1">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="#">Home</a></li>
+          <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <!--Background-->
+
+<!--
+<div class="container-card">
+ 
+  <iframe id="card-frame" src="https://s3.amazonaws.com/cdn.siggyworks.com/playground/autumn-card/card.svg" />
+  
+</div>-->
+
+
+
+ 
+
+
+
+
+	<div class="hearts" aria-hidden="true">
+
+<!-- Quote -->
+
+<div  class="quote">
+  <h2>Feel the poet stirring within you?</h2>
+  <p>Join us and our amazing poetry community on this beautiful journey of creating what matters most to your heart! With WriCreate, come together with fellow poets from all across the world and feel the sense of serenity and belongingness that we all deserve and desire most! See if it makes you stay and miss the 'Obscure'...</p><br>
+    <p>"These places you don’t bother to remember, They miss your indifference." </p>
+</div>
+
+
+<label class="love-toggle" style="margin-left:5vw;"><input type="checkbox" /><span class="material-icons icon"><div style="display:flex"><i class="fas fa-heart" ></i>&nbsp;<p style="line-height:2px; font-size:30px;">Like it?</p></div><div class="brust"></div></span></label>
+
+ <!--   
+        <button class="btn-small" onclick="setRandomColor()">Color Change</button>
+-->
+
+       <!-- Comment section -->
+  <%  poems.forEach(function(poem){ %>
+   <div class="row flex-top" style="display: flex; margin: auto 2%;">
+      <header class="border shadow comment-bg">
+      <h5 class="" style="font-weight: 800;"><%=poem.title%> : &nbsp;</h5>
+        <p style="line-height: 30px;"><%=poem.post%></p>
+	        </header>   
+	      </div>
+
+<% }) %>
+
+
+
+    <form class="sweet-form" action="/poetry" method="post" style="margin-left: 9vw; margin-right:9vw;">
+      <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" type="text" name="postTitle" style="background: #dee9f5;"><br>
+        <label>Continue our story</label>
+        <textarea class="form-control" name="postBody" rows="4" cols="70" style="background: #dee9f5;" placeholder="Take it where you please, no duty on creativity!"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button" style="background: #f3a8b5;">Publish</button>
+      <button class="btn" style="background: #f7ff78; margin-left: 2%;" onclick="window.location.reload();">Reload</button>
+    </form>
+
+
+
+<!-- Footer -->
+<div class="footer-con col-sm-12 row flex-center">
+  <div class="col-12">
+    <footer class="border shadow">
+      <p style="margin-left: 3%">Made with <i class="fas fa-heart"></i> by WriCreate.
+     
+    </footer>
+  </div>
+</div>
+
+<!-- Falling autumn leaves -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js">
+
+   /* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+var falling = true;
+
+TweenLite.set('body',{perspective:600});
+//TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+
+
+var total = 30;
+var container = document.querySelector('body');
+var	w = window.innerWidth , h = window.innerHeight;
+
+ function R(min,max) {return min+Math.random()*(max-min)};
+
+ function animm(elm){   
+   TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
+   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+ };
+ 
+ for (i=0; i<total; i++){ 
+   var Div = document.createElement('div');
+   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
+   container.appendChild(Div);
+   animm(Div);
+ }
+ 
+
+
+/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+</script>
+
+
+</body>
+</html>
