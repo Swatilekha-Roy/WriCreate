@@ -211,10 +211,10 @@ header {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: #000;
+  background-color: #635e75;
 }
 ::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #635e75;
   box-shadow: inset 0 0 5px #00a;
   border-radius: 10px;
 }
@@ -427,7 +427,7 @@ html {
 .st-btn {
   margin: 4% 20%;
   background: #9fa3d2;
-  padding: 3rem auto;
+  padding: 9rem auto;
 }
 
 .st-btn:hover {
