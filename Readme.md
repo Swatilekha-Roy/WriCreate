@@ -1,5 +1,5 @@
 # WriCreate #
-Try it out at https://wricreate.cyraalesha.repl.co/
+Try it out at https://wricreate.herokuapp.com/
 
 
 ## Inspiration
