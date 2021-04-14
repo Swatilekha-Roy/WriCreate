@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
   <title>WriCreate Horror</title>
-    <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+
+  <!-- Paper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-  	<!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<script src="https://use.edgefonts.net/creepster.js"></script>-->
-
-    <link rel="stylesheet" href="horror.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="horror.css">
 
 
 
@@ -43,7 +46,7 @@
       </label>
       <div class="collapsible-body">
         <ul class="inline">
-          <li><a href="/index">Home</a></li>
+          <li><a href="https://wricreate.herokuapp.com">Home</a></li>
           <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
         </ul>
       </div>
@@ -95,11 +98,10 @@
       <li></li>
     </ul>
     </nav>
+  
 
 
-    <audio id="audiotag1" src="/horror.mp3" preload="auto"></audio>
 
-	<div class="hearts" aria-hidden="true">
 
 <div  class="quote">
   <h2>Time for some bone chilling progress!</h2>
@@ -113,12 +115,12 @@ A dozen faces with green voids instead of eyes turned from screens.
 </div>
 
 
-<label class="love-toggle" style="margin-left:5vw;"><input type="checkbox" /><span class="material-icons icon"><div style="display:flex"><i class="fas fa-heart" ></i>&nbsp;<p style="line-height:2px; font-size:30px;">Liked it!</p></div><div class="brust"></div></span></label>
 
 
 
 
-     <!-- Comment section -->
+
+     
   <%  comments.forEach(function(comment){ %>
    <div class="row flex-top" style="display: flex; margin: auto 2%;">
       <header class="border shadow comment-bg">
@@ -128,7 +130,7 @@ A dozen faces with green voids instead of eyes turned from screens.
 	      </div>
 
 <% }) %>
-
+      
 
 
     <form class="sweet-form" action="/horror" method="post" style="margin-left: 9vw; margin-right:9vw;">
@@ -139,10 +141,10 @@ A dozen faces with green voids instead of eyes turned from screens.
         <textarea class="form-control" name="postBody" rows="4" cols="70" style="background: #dee9f5;" placeholder="Take it where you please, no duty on creativity!"></textarea>
       </div>
       <button class="btn btn-primary" type="submit" name="button" style="background: #f3a8b5;">Publish</button>
-      <!--<button class="btn" style="background: #f7ff78; margin-left: 2%;" onclick="window.location.reload();">Reload</button>-->
+      
     </form>
 
-
+  
 
     <!-- Footer -->
 <div class="footer-con row flex-center">
