@@ -1,126 +1,118 @@
-body {
-  background-color: #538e68;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Title -->
+  <title>WriCreate Horror</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type = "image/x-icon">
 
-.quote {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 20px;
-  margin: 2% 4% 5% 4%;
-  z-index: 999;
-}
+  <!-- Paper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+  	
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 
-.heart{
-  height: 5px;
-  width: auto;
-}
-
-.highlighted{
-    color: darkblue;
-}
-
-
-
-header {
-  background-color: rgba(209, 209, 209, 0.829);
-  padding: 0rem 0.5rem;
-}
-
-.comment-bg {
-  margin-right: 15%;
-  margin-bottom: 7px;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 700px) {
-  margin-right: 2%;
-}
-
-.sweet-form {
-  margin-top: 3%;
-  margin-left: 2%;
-}
-
-.comment-bg:nth-child(1) {
-  margin-right: 5%;
-  float: left;
-}
-
-.comment-bg:nth-child(2) {
-  margin-left: 5%;
-  float: right;
-  background: red;
-}
-
-.comment-bg {
-  background: #eebaff;
-}
-
-
-/* Footer */
-
-.footer-con {
-  margin-bottom: 0;
-}
-
-footer {
-  margin: 4% 0 0 0;
-  margin-bottom: 0 !important;
-  overflow: hidden;
-  background: rgb(213 201 253);
-}
-
-a .fa-github:link {
-  text-decoration: none;
-}
-
-a .fa-github:visited {
-  text-decoration: none;
-}
-
-a .fa-github:hover {
-  text-decoration: none;
-}
-
-a .fa-github:active {
-  text-decoration: none;
-}
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="horror.css">
 
 
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #000;
-}
-::-webkit-scrollbar-track {
-  background-color: #000;
-  box-shadow: inset 0 0 5px #00a;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: red;
-  height: 5px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #fa0;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #0a0;
-}
+</head>
 
 
-.fa {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-  float: right;
-  margin-right: 2%;
-}
+<body>
+
+
+
+
+
+
+<!-- Navbar -->
+  <nav class="border fixed split-nav" style="background-color: #e7e1fb;">
+    <div class="nav-brand">
+       <a href="#"><img src="images/logo (2).png" style="height:53px"/></a>
+    </div>
+    <div class="collapsible">
+      <input id="collapsible1" type="checkbox" name="collapsible1">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="https://wricreate.herokuapp.com">Home</a></li>
+          <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Lights -->
+    <ul class="lightrope">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    </nav>
+  
+
+
+
+
+<div  class="quote">
+  <h2>Time for some bone chilling progress!</h2>
+    <p style="color: #ccc8c8;">“Let’s leave!” A bruised Sam croaked.
+A dozen faces with green voids instead of eyes turned from screens. 
+“Oh no, they are…” Christy stammered.
+
+“Outside, it was night and the entire park looked deserted. All of us were panting and Sam voiced our feelings, “Was that real?”
+“Hope not”, I said.
+</p>
+</div>
 
 
 
@@ -128,196 +120,43 @@ a .fa-github:active {
 
 
 
-/* Love toggle */
-@import "compass";
- html, body {
-	 height: 100%;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
+     
+  <%  comments.forEach(function(comment){ %>
+   <div class="row flex-top" style="display: flex; margin: auto 2%;">
+      <header class="border shadow comment-bg">
+      <h5 class="" style="font-weight: 800;"><%=comment.title%> : &nbsp;</h5>
+        <p style="line-height: 30px;"><%=comment.post%></p>
+	        </header>   
+	      </div>
 
-	 flex-wrap: wrap;
-	 justify-items: center;
-}
- .love-toggle {
-	 display: inline-flex;
-	 height: 80px;
-	 width: 80px;
-	 justify-content: center;
-	 align-items: center;
-	 cursor: pointer;
-	 position: relative;
-	 color: #b3b3b3;
-}
- .love-toggle .icon {
-	 border-radius: 50%;
-	 font-size: 40px;
-	 padding: 16px;
-	 position: relative;
-	 z-index: 2;
-}
- .love-toggle .icon::selection {
-	 background-color: transparent;
-}
- .love-toggle .brust {
-	 position: absolute;
-	 top: 0;
-	 bottom: 0;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
-	 border-radius: 50%;
-	 z-index: -1;
-}
- .love-toggle input[type="checkbox"] {
-	 display: none;
-}
- .love-toggle input[type="checkbox"]:checked ~ .icon {
-	 color: #e63946;
-	 border-color: #e63946;
-	 animation: iconAnimate 0.25s ease-in-out;
-}
- @keyframes iconAnimate {
-	 0%, 100% {
-		 transform: scale(1);
-	}
-	 50% {
-		 transform: scale(0.75);
-	}
-}
- .love-toggle input[type="checkbox"]:checked ~ .icon .brust {
-	 animation: animate 0.45s ease-in-out;
-}
- @keyframes animate {
-	 0% {
-		 box-shadow: 0px 0px transparent, 0px * cos(30deg) 0px * sin(30deg) #e63946, 0px * cos(60deg) 0px * sin(60deg) #e63946, 0px * cos(90deg) 0px * sin(90deg) #e63946, 0px * cos(120deg) 0px * sin(120deg) #e63946, 0px * cos(150deg) 0px * sin(150deg) #e63946, 0px * cos(180deg) 0px * sin(180deg) #e63946, 0px * cos(210deg) 0px * sin(210deg) #e63946, 0px * cos(240deg) 0px * sin(240deg) #e63946, 0px * cos(270deg) 0px * sin(270deg) #e63946, 0px * cos(300deg) 0px * sin(300deg) #e63946, 0px * cos(330deg) 0px * sin(330deg) #e63946, 0px * cos(360deg) 0px * sin(360deg) #e63946;
-		 height: 20px;
-		 width: 20px;
-	}
-	 80% {
-		 box-shadow: 0px 0px transparent, 60px * cos(30deg) 60px * sin(30deg) #e63946, 60px * cos(60deg) 60px * sin(60deg) #e63946, 60px * cos(90deg) 60px * sin(90deg) #e63946, 60px * cos(120deg) 60px * sin(120deg) #e63946, 60px * cos(150deg) 60px * sin(150deg) #e63946, 60px * cos(180deg) 60px * sin(180deg) #e63946, 60px * cos(210deg) 60px * sin(210deg) #e63946, 60px * cos(240deg) 60px * sin(240deg) #e63946, 60px * cos(270deg) 60px * sin(270deg) #e63946, 60px * cos(300deg) 60px * sin(300deg) #e63946, 60px * cos(330deg) 60px * sin(330deg) #e63946, 60px * cos(360deg) 60px * sin(360deg) #e63946;
-	}
-	 100% {
-		 box-shadow: 0px 0px transparent, 60px * cos(30deg) 60px * sin(30deg) #e63946, 60px * cos(60deg) 60px * sin(60deg) #e63946, 60px * cos(90deg) 60px * sin(90deg) #e63946, 60px * cos(120deg) 60px * sin(120deg) #e63946, 60px * cos(150deg) 60px * sin(150deg) #e63946, 60px * cos(180deg) 60px * sin(180deg) #e63946, 60px * cos(210deg) 60px * sin(210deg) #e63946, 60px * cos(240deg) 60px * sin(240deg) #e63946, 60px * cos(270deg) 60px * sin(270deg) #e63946, 60px * cos(300deg) 60px * sin(300deg) #e63946, 60px * cos(330deg) 60px * sin(330deg) #e63946, 60px * cos(360deg) 60px * sin(360deg) #e63946;
-		 height: 0px;
-		 width: 0px;
-	}
-}
+<% }) %>
+      
 
-/* Lights */
- .lightrope {
-   text-align: center;
-   white-space: nowrap;
-   overflow: hidden;
-   position: absolute;
-   z-index: 1;
-   margin: -15px 0 0 0;
-   margin-top: 45px;
-   padding: 0;
-   pointer-events: none;
-   width: 100%;
-}
- .lightrope li {
-   position: relative;
-   animation-fill-mode: both;
-   animation-iteration-count: infinite;
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: block;
-   width: 12px;
-   height: 28px;
-   border-radius: 50%;
-   margin: 20px;
-   display: inline-block;
-   background: rgba(0, 247, 165, 1);
-   box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 1);
-   animation-name: flash-1;
-   animation-duration: 2s;
-}
- .lightrope li:nth-child(2n+1) {
-   background: rgba(0, 255, 255, 1);
-   box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
-   animation-name: flash-2;
-   animation-duration: 0.4s;
-}
- .lightrope li:nth-child(4n+2) {
-   background: rgba(247, 0, 148, 1);
-   box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 1);
-   animation-name: flash-3;
-   animation-duration: 1.1s;
-}
- .lightrope li:nth-child(odd) {
-   animation-duration: 1.8s;
-}
- .lightrope li:nth-child(3n+1) {
-   animation-duration: 1.4s;
-}
- .lightrope li:before {
-   content: "";
-   position: absolute;
-   background: #222;
-   width: 10px;
-   height: 9.3333333333px;
-   border-radius: 3px;
-   top: -4.6666666667px;
-   left: 1px;
-}
- .lightrope li:after {
-   content: "";
-   top: -14px;
-   left: 9px;
-   position: absolute;
-   width: 52px;
-   height: 18.6666666667px;
-   border-bottom: solid #222 2px;
-   border-radius: 50%;
-}
- .lightrope li:last-child:after {
-   content: none;
-}
- .lightrope li:first-child {
-   margin-left: -40px;
-}
- @keyframes flash-1 {
-   0%, 100% {
-     background: rgba(0, 247, 165, 1);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 1);
-  }
-   50% {
-     background: rgba(0, 247, 165, 0.4);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
-  }
-}
- @keyframes flash-2 {
-   0%, 100% {
-     background: rgba(0, 255, 255, 1);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 1);
-  }
-   50% {
-     background: rgba(0, 255, 255, 0.4);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
-  }
-}
- @keyframes flash-3 {
-   0%, 100% {
-     background: rgba(247, 0, 148, 1);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 1);
-  }
-   50% {
-     background: rgba(247, 0, 148, 0.4);
-     box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
-  }
-}
 
-@media only screen and (max-width: 700px) {
-  .lightrope {
-    margin-top: 0;
-    padding-top: 0;
-  }
-}
- 
+    <form class="sweet-form" action="/horror" method="post" style="margin-left: 9vw; margin-right:9vw;">
+      <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" type="text" name="postTitle" style="background: #dee9f5;"><br>
+        <label>Continue our story</label>
+        <textarea class="form-control" name="postBody" rows="4" cols="70" style="background: #dee9f5;" placeholder="Take it where you please, no duty on creativity!"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button" style="background: #f3a8b5;">Publish</button>
+      
+    </form>
 
-html {
-  overflow-x: hidden;
-}
+  
+
+    <!-- Footer -->
+<div class="footer-con row flex-center">
+  <div class="col-12">
+    <footer class="border shadow">
+      <p style="margin-left: 3%">Made with <i class="fas fa-heart"></i> by WriCreate.
+
+    </footer>
+  </div>
+</div>
+
+
+</body>
+</html>
+
