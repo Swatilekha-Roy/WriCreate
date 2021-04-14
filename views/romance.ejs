@@ -37,7 +37,7 @@
       </label>
       <div class="collapsible-body">
         <ul class="inline">
-          <li><a href="/index">Home</a></li>
+          <li><a href="https://wricreate.herokuapp.com/">Home</a></li>
           <li><a href="https://github.com/Swatilekha-Roy/WriCreate"><i class="fab fa-github" style="font-size: 40px"></i></a></li>
         </ul>
       </div>
@@ -90,7 +90,7 @@
     </ul>
     </nav>
 
-    <audio id="audiotag1" src="/romance.mp3" preload="auto"></audio>
+
 
     <!--Background-->
     <p style="display: none;">
@@ -118,15 +118,7 @@ VALENTINES HEARTS
     <div class="heart">
       &#10084;
     </div>
-    <div class="heart">
-      &#10084;
-    </div>
-    <div class="heart">
-      &#10084;
-    </div>
-    <div class="heart">
-    &#10084;
-    </div>
+    
     <div class="heart">
       &#10084;
     </div>
@@ -136,15 +128,7 @@ VALENTINES HEARTS
     <div class="heart">
       &#10084;
     </div>
-    <div class="heart">
-      &#10084;
-    </div>
-        <div class="heart">
-      &#10084;
-    </div>
-    <div class="heart">
-      &#10084;
-    </div>
+        
         <div class="heart">
       &#10084;
     </div>
@@ -158,12 +142,6 @@ VALENTINES HEARTS
 <!-- Quote -->
 
 
-<audio controls>
-
-  <source src="/horror.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
-
 
 <div  class="quote">
   <h2>In mood for writing some romance?</h2>
@@ -171,11 +149,6 @@ Your browser does not support the audio element.
     <br>A rich politician’s rich gift to her poor and pampered daughter. You were on the other side of the kitchen turned pop up bar, cleaning each peg till it was shining like the diamond brooch on my Corduroy cardigan.”</p>
 </div>
 
-<label class="love-toggle" style="margin-left:5vw;"><input type="checkbox" /><span class="material-icons icon"><div style="display:flex"><i class="fas fa-heart" ></i>&nbsp;<p style="line-height:2px; font-size:30px;">Like it?</p></div><div class="brust"></div></span></label>
-
- <!--   
-        <button class="btn-small" onclick="setRandomColor()">Color Change</button>
--->
 
     <!-- Comment section -->
   <%  romments.forEach(function(romment){ %>
@@ -208,70 +181,14 @@ Your browser does not support the audio element.
   <div class="col-12">
     <footer class="border shadow">
       <p style="margin-left: 3%">Made with <i class="fas fa-heart"></i> by WriCreate.
-      <!--<div class="row flex-right">
-
-        <div class="sm-4 col"><a href="https://github.com/Swatilekha-Roy/WriCreate" style="text-decoration: none !important;"><i class="fab fa-github" style="font-size: 40px"></i></a></div>
-      </div>-->
+      
     </footer>
   </div>
 </div>
 
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-  function getRandomColor() {
-  var letters = 'BCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
 
 
 
-function setRandomColor() {
-  $(".comment-bg").css("background-color", getRandomColor());
-}
-</script>
--->
- <!--      <script>
-    function myFunction(x) {
-        x.classList.toggle("highlighted");
-    }
-    var counter = 0;
-    // var like/s=document.getElementById("likes");
-    function count() {
-    $('#notify').addClass("notification");
-    // $("#notify").html(counter);
-    }
-    $('body').on('click', '.btn', function(e) {
-    $(this).toggleClass("increment");
-    
-    if($(this).hasClass("increment")){
-        counter++;
-        // likes++;
-    }else{
-      // likes--;/
-        counter--;
-    }
-        // if(counter===1){
-        //   console.log("hii");
-        //   likes++;
-        // }else{
-        //   likes--;
-        // }
-        // Like.updateOne({_id:"607121e391d45f3178a44f3d"},{count:0},function(err){
-        //   if(err){
-        //     console.log(err);
-        //   }else{
-        //     console.log("updated");
-        //   }
-        // }); 
-        
-    count();
-    });
-    </script>-->
+
 </body>
 </html>
