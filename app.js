@@ -107,6 +107,7 @@ app.post("/romance",function(req,res){
   });
 
   romment.save();
+  res.redirect("/romance");
 });
 
 
@@ -126,6 +127,7 @@ app.post("/poetry",function(req,res){
   });
 
   poem.save();
+  res.redirect("/poetry");
 });
 
 // Like.updateOne({_id:"607121e391d45f3178a44f3d"},{count:3},function(err){
@@ -159,6 +161,7 @@ app.post("/horror",function(req,res){
 
   comment.save();
   // res.render("story",{count:count});
+  res.redirect("/horror");
 });
 
 
